@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ytkachyshyn/CLionProjects/opengl/main.c
+stdio.h
+-
+stdlib.h
+-
+OpenGL/gl.h
+-
+SDL2/SDL.h
+-
+
