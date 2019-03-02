@@ -10,6 +10,7 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
+  "/System/Library/Frameworks/OpenGL.framework"
   "/usr/local/Cellar/sdl2/2.0.9/include/SDL2"
   )
 

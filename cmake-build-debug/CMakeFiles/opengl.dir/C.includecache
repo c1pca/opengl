@@ -11,8 +11,8 @@ stdio.h
 -
 stdlib.h
 -
-OpenGL/gl.h
--
 SDL2/SDL.h
+-
+OpenGL/gl.h
 -
 
