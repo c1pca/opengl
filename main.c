@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+//#include <stdbool.h>
 #include <SDL2/SDL.h>
 
 //MAC
@@ -82,22 +83,10 @@ bool init(){
 //            //Update the surface
 //            SDL_UpdateWindowSurface( sdl_window );
 //            printf( "update: %s\n", SDL_GetError() );
-
-            bool quit = false ;
-            SDL_Event e;
-            while (!quit) {
-                while (SDL_PollEvent(&e)) {
-                    if (e.type == SDL_QUIT) {
-                        quit = true;
-                    }
-                }
-            }
         }
     }
     return true;
 }
-
-//GLfloat point2d = {1.0, 0.3, 0.0};
 
 int main (int argc, char* args[] )
 {
@@ -149,9 +138,23 @@ int main (int argc, char* args[] )
     glGenBuffers(1, &vbo);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     float vertex_data[] = {0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
-
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_data), vertex_data, GL_STATIC_DRAW);
 
     //setup vertex attributes TODO
+    GLuint  va_position = 0;
+    glEnableVertexAttribArray(va_position);
+    glVertexAttribPointer(va_position, 2, GL_FLOAT, GL_FALSE, 0, (GLvoid*)0);
+
+    glClearColor(0.4, 0.6, 0.8, 1.0);
+
+    bool running = true;
+    do{
+        SDL_Event event;
+        while(SDL_PollEvent(&event)){
+            running = !(event.type ==SDL_Quit
+                    || (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE ));
+        }
+    } while (running);
 
     return 0;
 }

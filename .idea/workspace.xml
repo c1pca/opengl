@@ -13,15 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0de98788-4964-4cc1-b369-4e30567076d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/opengl.dir/main.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/opengl" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/opengl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/opengl.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/opengl.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -46,11 +38,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="150" column="63" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
+            <state relative-caret-position="913">
+              <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <element signature="e#936#1123#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,9 +66,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="15" />
-    <option name="y" value="23" />
-    <option name="width" value="1609" />
+    <option name="x" value="-59" />
+    <option name="y" value="-1048" />
+    <option name="width" value="1384" />
     <option name="height" value="962" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -86,7 +77,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -98,6 +88,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -134,7 +125,9 @@
       <option name="presentableId" value="Default" />
       <updated>1551388882350</updated>
       <workItem from="1551388885984" duration="16647000" />
-      <workItem from="1551553164800" duration="2825000" />
+      <workItem from="1551553164800" duration="4097000" />
+      <workItem from="1551653072957" duration="1204000" />
+      <workItem from="1551703826555" duration="1779000" />
     </task>
     <task id="LOCAL-00001" summary="Raspberry fix">
       <created>1551401048381</created>
@@ -143,11 +136,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551401048381</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add Opengl(ES) + shaders + vbo">
+      <created>1551566167087</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1551566167087</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19472000" />
+    <option name="totallyTimeSpent" value="23727000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -159,21 +159,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="15" y="23" width="1421" height="962" extended-state="0" />
+    <frame x="-57" y="-1046" width="1384" height="962" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1986947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20938897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29425287" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29397875" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23734939" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32985386" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.2682672" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32988507" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.26800472" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.338843" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.32881" />
@@ -188,9 +189,20 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Raspberry fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Raspberry fix" />
+    <MESSAGE value="Add Opengl(ES) + shaders + vbo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Opengl(ES) + shaders + vbo" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/10.0.0/include/stdbool.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="41" column="6" lean-forward="true" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding>
+            <element signature="e#1521#1731#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -200,11 +212,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="150" column="63" selection-start-line="150" selection-start-column="63" selection-end-line="150" selection-end-column="63" />
+        <state relative-caret-position="913">
+          <caret line="88" column="1" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#936#1123#0" expanded="true" />
           </folding>
         </state>
       </provider>
