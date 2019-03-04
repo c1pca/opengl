@@ -72,17 +72,6 @@ bool init(){
         if(!sdl_gl_context){
             printf( "Failed to create OpenGL window: %s\n", SDL_GetError() );
             exit(2);
-//            //Get window surface
-//            screenSurface = SDL_GetWindowSurface( sdl_window );
-//
-//
-//            //Fill the surface white
-//            SDL_FillRect( screenSurface, NULL, SDL_MapRGB( screenSurface->format, 0xFF, 0xFF, 0xFF ) );
-//            printf( "rect: %s\n", SDL_GetError() );
-//
-//            //Update the surface
-//            SDL_UpdateWindowSurface( sdl_window );
-//            printf( "update: %s\n", SDL_GetError() );
         }
     }
     return true;
@@ -133,14 +122,14 @@ int main (int argc, char* args[] )
     GLuint u_time_loc = glGetUniformLocation(program, "u_time");
     float u_time = 0.0f;
 
-    //create vbo TODO
+    //create vbo
     GLuint vbo;
     glGenBuffers(1, &vbo);
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
     float vertex_data[] = {0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertex_data), vertex_data, GL_STATIC_DRAW);
 
-    //setup vertex attributes TODO
+    //setup vertex attributes
     GLuint  va_position = 0;
     glEnableVertexAttribArray(va_position);
     glVertexAttribPointer(va_position, 2, GL_FLOAT, GL_FALSE, 0, (GLvoid*)0);
@@ -151,10 +140,22 @@ int main (int argc, char* args[] )
     do{
         SDL_Event event;
         while(SDL_PollEvent(&event)){
-            running = !(event.type ==SDL_Quit
+            running = !(event.type == SDL_QUIT
                     || (event.type == SDL_KEYDOWN && event.key.keysym.sym == SDLK_ESCAPE ));
         }
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+        glUniform1f(u_time_loc, u_time += 1.0f/60.0f);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+        SDL_GL_SwapWindow(sdl_window);
+
     } while (running);
+
+    glUseProgram(0);
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
+
+    glDeleteProgram(program);
+    glDeleteBuffers(1, &vbo);
 
     return 0;
 }
